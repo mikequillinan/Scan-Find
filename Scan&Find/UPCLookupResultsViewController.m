@@ -82,7 +82,7 @@
 #pragma mark - Get Data
 - (void)getQueryResults {
     [self cancelRequest];
-    NSString *urlString = [NSString stringWithFormat:@"https://www.googleapis.com/shopping/search/v1/public/products?key=%@&country=US&q=%@&alt=json&restrictBy=condition:new&rankBy=price:ascending", kSFGoogleProductsKey, self.upcString];
+    NSString *urlString = [NSString stringWithFormat:@"https://www.googleapis.com/shopping/search/v1/public/products?key=%@&country=US&q=%@&alt=json&restrictBy=condition:new&rankBy=price:ascending", kSFGoogleShoppingKey, self.upcString];
     [self startRequestWithURL:urlString];    
 }
 

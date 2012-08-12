@@ -11,17 +11,19 @@ Platform Support
 ==============
 This project since its purpose is to test and demonstrate the latest techniques in iOS and Objective-C development will only be tested on the latest versions on Xcode and the latest full iOS version. Currently Xcode 4.4.1 and iOS 5 are the supported platforms.
 
-ARC
-==============
-The main project is ARC compliant. Zxing 2.0 is being used for scanning and has not been updated to support ARC. This might be a cool thing to work on at some point.
-
 Setup
 ==============
 Download the code from github. Zxing is included as a git submodule, so be sure to initialize it. Otherwise, you can download the forked copy here. Be sure to place it in the project's root under Submodules/zxing. If you put it somewhere else, just update the target's Header search paths for ZXingWidget's Classes folder and the cpp/core/src paths to point to your new path.
 
 JSONKit is another submodule included. Be sure to initialize it.
 
-ToDos
+Enter your own Google Shopping APIs key in Scan&Find_prefix.pch Get one at https://code.google.com/apis
+
+ARC
+==============
+The main project is ARC compliant. Zxing 2.0 is being used for scanning and has not been updated to support ARC. This might be a cool thing to work on at some point.
+
+Todo List
 ==============
 - Make some use of the Storyboard.
 - Review the conversions of my old boiler plate classes like WebviewController for ARC and modern Objective-C usage.

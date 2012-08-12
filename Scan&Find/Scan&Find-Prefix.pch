@@ -13,6 +13,5 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#warning Remove this before committing
-#warning update this.
-#define kSFGoogleProductsKey @"AIzaSyAB6f7aSY9Oh1_4WyeaCobSftmAGgC0G6o"
+#warning Update this with your own Google Shopping API key before performing a lookup. Get one at https://code.google.com/apis
+#define kSFGoogleShoppingKey @"ENTER_YOUR_KEY_HERE"
