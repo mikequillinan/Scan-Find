@@ -15,12 +15,23 @@
 		5880CCE415D7D95D00724C7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CCE315D7D95D00724C7F /* AppDelegate.m */; };
 		5880CCE715D7D95D00724C7F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5880CCE515D7D95D00724C7F /* MainStoryboard_iPhone.storyboard */; };
 		5880CCEA15D7D95D00724C7F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5880CCE815D7D95D00724C7F /* MainStoryboard_iPad.storyboard */; };
-		5880CCED15D7D95E00724C7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CCEC15D7D95E00724C7F /* ViewController.m */; };
 		5880CCF515D7D95E00724C7F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCF415D7D95E00724C7F /* SenTestingKit.framework */; };
 		5880CCF615D7D95E00724C7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCD315D7D95D00724C7F /* UIKit.framework */; };
 		5880CCF715D7D95E00724C7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCD515D7D95D00724C7F /* Foundation.framework */; };
 		5880CCFF15D7D95E00724C7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5880CCFD15D7D95E00724C7F /* InfoPlist.strings */; };
 		5880CD0215D7D95E00724C7F /* Scan_FindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD0115D7D95E00724C7F /* Scan_FindTests.m */; };
+		5880CD1115D7E2A700724C7F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD1015D7E2A700724C7F /* ViewController.mm */; };
+		5880CD2915D7E3A800724C7F /* beep-beep.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD2815D7E3A800724C7F /* beep-beep.aiff */; };
+		5880CD2C15D7E41200724C7F /* libZXingWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD1F15D7E36900724C7F /* libZXingWidget.a */; };
+		5880CD3415D7E41200724C7F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD2D15D7E41200724C7F /* AddressBook.framework */; };
+		5880CD3515D7E41200724C7F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD2E15D7E41200724C7F /* AddressBookUI.framework */; };
+		5880CD3615D7E41200724C7F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD2F15D7E41200724C7F /* AudioToolbox.framework */; };
+		5880CD3715D7E41200724C7F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD3015D7E41200724C7F /* AVFoundation.framework */; };
+		5880CD3815D7E41200724C7F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD3115D7E41200724C7F /* CoreMedia.framework */; };
+		5880CD3915D7E41200724C7F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD3215D7E41200724C7F /* CoreVideo.framework */; };
+		5880CD3A15D7E41200724C7F /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD3315D7E41200724C7F /* libiconv.dylib */; };
+		5880CD3C15D7E92D00724C7F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD3B15D7E92D00724C7F /* icon.png */; };
+		5880CD3E15D7E93000724C7F /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD3D15D7E93000724C7F /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +41,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5880CCCE15D7D95D00724C7F;
 			remoteInfo = "Scan&Find";
+		};
+		5880CD1E15D7E36900724C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ZXingWidget;
+		};
+		5880CD2015D7E36900724C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D60398D13DF7CAD006F4B51;
+			remoteInfo = ZXingTests;
+		};
+		5880CD2A15D7E3BA00724C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ZXingWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,13 +79,24 @@
 		5880CCE615D7D95D00724C7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		5880CCE915D7D95D00724C7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		5880CCEB15D7D95D00724C7F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5880CCEC15D7D95E00724C7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5880CCF315D7D95E00724C7F /* Scan&FindTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scan&FindTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5880CCF415D7D95E00724C7F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5880CCFC15D7D95E00724C7F /* Scan&FindTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scan&FindTests-Info.plist"; sourceTree = "<group>"; };
 		5880CCFE15D7D95E00724C7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5880CD0015D7D95E00724C7F /* Scan_FindTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scan_FindTests.h; sourceTree = "<group>"; };
 		5880CD0115D7D95E00724C7F /* Scan_FindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scan_FindTests.m; sourceTree = "<group>"; };
+		5880CD1015D7E2A700724C7F /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingWidget.xcodeproj; path = Submodules/zxing/iphone/ZXingWidget/ZXingWidget.xcodeproj; sourceTree = SOURCE_ROOT; };
+		5880CD2815D7E3A800724C7F /* beep-beep.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "beep-beep.aiff"; sourceTree = "<group>"; };
+		5880CD2D15D7E41200724C7F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		5880CD2E15D7E41200724C7F /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		5880CD2F15D7E41200724C7F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5880CD3015D7E41200724C7F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5880CD3115D7E41200724C7F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5880CD3215D7E41200724C7F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5880CD3315D7E41200724C7F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		5880CD3B15D7E92D00724C7F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
+		5880CD3D15D7E93000724C7F /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +104,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5880CD3415D7E41200724C7F /* AddressBook.framework in Frameworks */,
+				5880CD3515D7E41200724C7F /* AddressBookUI.framework in Frameworks */,
+				5880CD3615D7E41200724C7F /* AudioToolbox.framework in Frameworks */,
+				5880CD3715D7E41200724C7F /* AVFoundation.framework in Frameworks */,
+				5880CD3815D7E41200724C7F /* CoreMedia.framework in Frameworks */,
+				5880CD3915D7E41200724C7F /* CoreVideo.framework in Frameworks */,
+				5880CD3A15D7E41200724C7F /* libiconv.dylib in Frameworks */,
+				5880CD2C15D7E41200724C7F /* libZXingWidget.a in Frameworks */,
 				5880CCD415D7D95D00724C7F /* UIKit.framework in Frameworks */,
 				5880CCD615D7D95D00724C7F /* Foundation.framework in Frameworks */,
 				5880CCD815D7D95D00724C7F /* CoreGraphics.framework in Frameworks */,
@@ -102,10 +153,17 @@
 		5880CCD215D7D95D00724C7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5880CCD315D7D95D00724C7F /* UIKit.framework */,
-				5880CCD515D7D95D00724C7F /* Foundation.framework */,
+				5880CD2D15D7E41200724C7F /* AddressBook.framework */,
+				5880CD2E15D7E41200724C7F /* AddressBookUI.framework */,
+				5880CD2F15D7E41200724C7F /* AudioToolbox.framework */,
+				5880CD3015D7E41200724C7F /* AVFoundation.framework */,
+				5880CD3115D7E41200724C7F /* CoreMedia.framework */,
+				5880CD3215D7E41200724C7F /* CoreVideo.framework */,
+				5880CD3315D7E41200724C7F /* libiconv.dylib */,
 				5880CCD715D7D95D00724C7F /* CoreGraphics.framework */,
+				5880CCD515D7D95D00724C7F /* Foundation.framework */,
 				5880CCF415D7D95E00724C7F /* SenTestingKit.framework */,
+				5880CCD315D7D95D00724C7F /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,7 +176,9 @@
 				5880CCE515D7D95D00724C7F /* MainStoryboard_iPhone.storyboard */,
 				5880CCE815D7D95D00724C7F /* MainStoryboard_iPad.storyboard */,
 				5880CCEB15D7D95D00724C7F /* ViewController.h */,
-				5880CCEC15D7D95E00724C7F /* ViewController.m */,
+				5880CD1015D7E2A700724C7F /* ViewController.mm */,
+				5880CD2215D7E36F00724C7F /* Dependencies */,
+				5880CD2615D7E3A800724C7F /* Resources */,
 				5880CCDA15D7D95D00724C7F /* Supporting Files */,
 			);
 			path = "Scan&Find";
@@ -154,6 +214,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5880CD1715D7E36800724C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD1F15D7E36900724C7F /* libZXingWidget.a */,
+				5880CD2115D7E36900724C7F /* ZXingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5880CD2215D7E36F00724C7F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		5880CD2615D7E3A800724C7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD3F15D7E93600724C7F /* Images */,
+				5880CD2715D7E3A800724C7F /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5880CD2715D7E3A800724C7F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD2815D7E3A800724C7F /* beep-beep.aiff */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5880CD3F15D7E93600724C7F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD3B15D7E92D00724C7F /* icon.png */,
+				5880CD3D15D7E93000724C7F /* icon@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +271,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5880CD2B15D7E3BA00724C7F /* PBXTargetDependency */,
 			);
 			name = "Scan&Find";
 			productName = "Scan&Find";
@@ -212,6 +316,12 @@
 			mainGroup = 5880CCC415D7D95D00724C7F;
 			productRefGroup = 5880CCD015D7D95D00724C7F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5880CD1715D7E36800724C7F /* Products */;
+					ProjectRef = 5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5880CCCE15D7D95D00724C7F /* Scan&Find */,
@@ -219,6 +329,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5880CD1F15D7E36900724C7F /* libZXingWidget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZXingWidget.a;
+			remoteRef = 5880CD1E15D7E36900724C7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5880CD2115D7E36900724C7F /* ZXingTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZXingTests.octest;
+			remoteRef = 5880CD2015D7E36900724C7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5880CCCD15D7D95D00724C7F /* Resources */ = {
@@ -228,6 +355,9 @@
 				5880CCDE15D7D95D00724C7F /* InfoPlist.strings in Resources */,
 				5880CCE715D7D95D00724C7F /* MainStoryboard_iPhone.storyboard in Resources */,
 				5880CCEA15D7D95D00724C7F /* MainStoryboard_iPad.storyboard in Resources */,
+				5880CD2915D7E3A800724C7F /* beep-beep.aiff in Resources */,
+				5880CD3C15D7E92D00724C7F /* icon.png in Resources */,
+				5880CD3E15D7E93000724C7F /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +394,7 @@
 			files = (
 				5880CCE015D7D95D00724C7F /* main.m in Sources */,
 				5880CCE415D7D95D00724C7F /* AppDelegate.m in Sources */,
-				5880CCED15D7D95E00724C7F /* ViewController.m in Sources */,
+				5880CD1115D7E2A700724C7F /* ViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +413,11 @@
 			isa = PBXTargetDependency;
 			target = 5880CCCE15D7D95D00724C7F /* Scan&Find */;
 			targetProxy = 5880CCF815D7D95E00724C7F /* PBXContainerItemProxy */;
+		};
+		5880CD2B15D7E3BA00724C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXingWidget;
+			targetProxy = 5880CD2A15D7E3BA00724C7F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -378,8 +513,13 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scan&Find/Scan&Find-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					Submodules/zxing/cpp/core/src,
+					"Submodules/zxing/iphone/ZXingWidget/Classes/**",
+				);
 				INFOPLIST_FILE = "Scan&Find/Scan&Find-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,8 +529,13 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scan&Find/Scan&Find-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					Submodules/zxing/cpp/core/src,
+					"Submodules/zxing/iphone/ZXingWidget/Classes/**",
+				);
 				INFOPLIST_FILE = "Scan&Find/Scan&Find-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -448,6 +593,7 @@
 				5880CD0715D7D95E00724C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5880CD0815D7D95E00724C7F /* Build configuration list for PBXNativeTarget "Scan&FindTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +602,7 @@
 				5880CD0A15D7D95E00724C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

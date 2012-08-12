@@ -1,0 +1,3 @@
+[submodule "Submodules/zxing"]
+	path = Submodules/zxing
+	url = https://mikequillinan@github.com/mikequillinan/zxing.git
