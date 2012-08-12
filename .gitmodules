@@ -1,3 +1,6 @@
 [submodule "Submodules/zxing"]
 	path = Submodules/zxing
 	url = https://mikequillinan@github.com/mikequillinan/zxing.git
+[submodule "Submodules/json-kit"]
+	path = Submodules/json-kit
+	url = https://mikequillinan@github.com/mikequillinan/JSONKit.git

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580D9C5E15D7FE5E00A9A3ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580D9C5D15D7FE5E00A9A3ED /* CoreLocation.framework */; };
+		580D9C6015D7FF0A00A9A3ED /* LookupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580D9C5F15D7FF0A00A9A3ED /* LookupViewController.xib */; };
 		5880CCD415D7D95D00724C7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCD315D7D95D00724C7F /* UIKit.framework */; };
 		5880CCD615D7D95D00724C7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCD515D7D95D00724C7F /* Foundation.framework */; };
 		5880CCD815D7D95D00724C7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCD715D7D95D00724C7F /* CoreGraphics.framework */; };
@@ -32,6 +34,17 @@
 		5880CD3A15D7E41200724C7F /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD3315D7E41200724C7F /* libiconv.dylib */; };
 		5880CD3C15D7E92D00724C7F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD3B15D7E92D00724C7F /* icon.png */; };
 		5880CD3E15D7E93000724C7F /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD3D15D7E93000724C7F /* icon@2x.png */; };
+		5880CD4C15D7EB6600724C7F /* LookupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD4B15D7EB6600724C7F /* LookupViewController.m */; };
+		5880CD4F15D7EB8700724C7F /* SHKActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD4E15D7EB8700724C7F /* SHKActivityIndicator.m */; };
+		5880CD5315D7EC4900724C7F /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5215D7EC4900724C7F /* NSString+HTMLEntities.m */; };
+		5880CD5615D7ECFA00724C7F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5515D7ECFA00724C7F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5880CD5B15D7ED4D00724C7F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5A15D7ED4D00724C7F /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5880CD6015D7EF1A00724C7F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5E15D7EF1A00724C7F /* WebViewController.m */; };
+		5880CD6115D7EF1A00724C7F /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD5F15D7EF1A00724C7F /* WebViewController.xib */; };
+		5880CD6315D7F4BE00724C7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD6215D7F4BE00724C7F /* SystemConfiguration.framework */; };
+		5880CD6515D7F4E000724C7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD6415D7F4E000724C7F /* QuartzCore.framework */; };
+		5880CD6A15D7F57400724C7F /* UPCLookupResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */; };
+		5880CD6B15D7F57400724C7F /* UPCLookupResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD6915D7F57400724C7F /* UPCLookupResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		580D9C5D15D7FE5E00A9A3ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		580D9C5F15D7FF0A00A9A3ED /* LookupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LookupViewController.xib; sourceTree = "<group>"; };
 		5880CCCF15D7D95D00724C7F /* Scan&Find.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scan&Find.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5880CCD315D7D95D00724C7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5880CCD515D7D95D00724C7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +112,24 @@
 		5880CD3315D7E41200724C7F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		5880CD3B15D7E92D00724C7F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
 		5880CD3D15D7E93000724C7F /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../../icon@2x.png"; sourceTree = "<group>"; };
+		5880CD4A15D7EB6600724C7F /* LookupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupViewController.h; sourceTree = "<group>"; };
+		5880CD4B15D7EB6600724C7F /* LookupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupViewController.m; sourceTree = "<group>"; };
+		5880CD4D15D7EB8700724C7F /* SHKActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKActivityIndicator.h; sourceTree = "<group>"; };
+		5880CD4E15D7EB8700724C7F /* SHKActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKActivityIndicator.m; sourceTree = "<group>"; };
+		5880CD5115D7EC4900724C7F /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTMLEntities.h"; sourceTree = "<group>"; };
+		5880CD5215D7EC4900724C7F /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLEntities.m"; sourceTree = "<group>"; };
+		5880CD5415D7ECFA00724C7F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = "Submodules/json-kit/JSONKit.h"; sourceTree = SOURCE_ROOT; };
+		5880CD5515D7ECFA00724C7F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = "Submodules/json-kit/JSONKit.m"; sourceTree = SOURCE_ROOT; };
+		5880CD5915D7ED4D00724C7F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5880CD5A15D7ED4D00724C7F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5880CD5D15D7EF1A00724C7F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5880CD5E15D7EF1A00724C7F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		5880CD5F15D7EF1A00724C7F /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		5880CD6215D7F4BE00724C7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5880CD6415D7F4E000724C7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UPCLookupResultsCell.xib; sourceTree = "<group>"; };
+		5880CD6815D7F57400724C7F /* UPCLookupResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCLookupResultsViewController.h; sourceTree = "<group>"; };
+		5880CD6915D7F57400724C7F /* UPCLookupResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPCLookupResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +137,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580D9C5E15D7FE5E00A9A3ED /* CoreLocation.framework in Frameworks */,
+				5880CD6515D7F4E000724C7F /* QuartzCore.framework in Frameworks */,
+				5880CD6315D7F4BE00724C7F /* SystemConfiguration.framework in Frameworks */,
 				5880CD3415D7E41200724C7F /* AddressBook.framework in Frameworks */,
 				5880CD3515D7E41200724C7F /* AddressBookUI.framework in Frameworks */,
 				5880CD3615D7E41200724C7F /* AudioToolbox.framework in Frameworks */,
@@ -157,12 +193,15 @@
 				5880CD2E15D7E41200724C7F /* AddressBookUI.framework */,
 				5880CD2F15D7E41200724C7F /* AudioToolbox.framework */,
 				5880CD3015D7E41200724C7F /* AVFoundation.framework */,
+				580D9C5D15D7FE5E00A9A3ED /* CoreLocation.framework */,
 				5880CD3115D7E41200724C7F /* CoreMedia.framework */,
 				5880CD3215D7E41200724C7F /* CoreVideo.framework */,
 				5880CD3315D7E41200724C7F /* libiconv.dylib */,
 				5880CCD715D7D95D00724C7F /* CoreGraphics.framework */,
 				5880CCD515D7D95D00724C7F /* Foundation.framework */,
+				5880CD6415D7F4E000724C7F /* QuartzCore.framework */,
 				5880CCF415D7D95E00724C7F /* SenTestingKit.framework */,
+				5880CD6215D7F4BE00724C7F /* SystemConfiguration.framework */,
 				5880CCD315D7D95D00724C7F /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -177,6 +216,7 @@
 				5880CCE815D7D95D00724C7F /* MainStoryboard_iPad.storyboard */,
 				5880CCEB15D7D95D00724C7F /* ViewController.h */,
 				5880CD1015D7E2A700724C7F /* ViewController.mm */,
+				5880CD6C15D7F82900724C7F /* Lookup VCs */,
 				5880CD2215D7E36F00724C7F /* Dependencies */,
 				5880CD2615D7E3A800724C7F /* Resources */,
 				5880CCDA15D7D95D00724C7F /* Supporting Files */,
@@ -226,6 +266,10 @@
 		5880CD2215D7E36F00724C7F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				5880CD5715D7ECFE00724C7F /* JSONKit */,
+				5880CD5C15D7ED5100724C7F /* Reachability */,
+				5880CD5815D7ED0800724C7F /* ShareKit Components */,
+				5880CD6615D7F53000724C7F /* WebViewController */,
 				5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */,
 			);
 			name = Dependencies;
@@ -234,6 +278,7 @@
 		5880CD2615D7E3A800724C7F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5880CD5015D7EC3900724C7F /* Categories */,
 				5880CD3F15D7E93600724C7F /* Images */,
 				5880CD2715D7E3A800724C7F /* Sounds */,
 			);
@@ -255,6 +300,65 @@
 				5880CD3D15D7E93000724C7F /* icon@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		5880CD5015D7EC3900724C7F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD5115D7EC4900724C7F /* NSString+HTMLEntities.h */,
+				5880CD5215D7EC4900724C7F /* NSString+HTMLEntities.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		5880CD5715D7ECFE00724C7F /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD5415D7ECFA00724C7F /* JSONKit.h */,
+				5880CD5515D7ECFA00724C7F /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		5880CD5815D7ED0800724C7F /* ShareKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD4D15D7EB8700724C7F /* SHKActivityIndicator.h */,
+				5880CD4E15D7EB8700724C7F /* SHKActivityIndicator.m */,
+			);
+			name = "ShareKit Components";
+			sourceTree = "<group>";
+		};
+		5880CD5C15D7ED5100724C7F /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD5915D7ED4D00724C7F /* Reachability.h */,
+				5880CD5A15D7ED4D00724C7F /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		5880CD6615D7F53000724C7F /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD5D15D7EF1A00724C7F /* WebViewController.h */,
+				5880CD5E15D7EF1A00724C7F /* WebViewController.m */,
+				5880CD5F15D7EF1A00724C7F /* WebViewController.xib */,
+			);
+			name = WebViewController;
+			sourceTree = "<group>";
+		};
+		5880CD6C15D7F82900724C7F /* Lookup VCs */ = {
+			isa = PBXGroup;
+			children = (
+				5880CD4A15D7EB6600724C7F /* LookupViewController.h */,
+				5880CD4B15D7EB6600724C7F /* LookupViewController.m */,
+				580D9C5F15D7FF0A00A9A3ED /* LookupViewController.xib */,
+				5880CD6815D7F57400724C7F /* UPCLookupResultsViewController.h */,
+				5880CD6915D7F57400724C7F /* UPCLookupResultsViewController.m */,
+				5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */,
+			);
+			name = "Lookup VCs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +462,9 @@
 				5880CD2915D7E3A800724C7F /* beep-beep.aiff in Resources */,
 				5880CD3C15D7E92D00724C7F /* icon.png in Resources */,
 				5880CD3E15D7E93000724C7F /* icon@2x.png in Resources */,
+				5880CD6115D7EF1A00724C7F /* WebViewController.xib in Resources */,
+				5880CD6A15D7F57400724C7F /* UPCLookupResultsCell.xib in Resources */,
+				580D9C6015D7FF0A00A9A3ED /* LookupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +502,13 @@
 				5880CCE015D7D95D00724C7F /* main.m in Sources */,
 				5880CCE415D7D95D00724C7F /* AppDelegate.m in Sources */,
 				5880CD1115D7E2A700724C7F /* ViewController.mm in Sources */,
+				5880CD4C15D7EB6600724C7F /* LookupViewController.m in Sources */,
+				5880CD4F15D7EB8700724C7F /* SHKActivityIndicator.m in Sources */,
+				5880CD5315D7EC4900724C7F /* NSString+HTMLEntities.m in Sources */,
+				5880CD5615D7ECFA00724C7F /* JSONKit.m in Sources */,
+				5880CD5B15D7ED4D00724C7F /* Reachability.m in Sources */,
+				5880CD6015D7EF1A00724C7F /* WebViewController.m in Sources */,
+				5880CD6B15D7F57400724C7F /* UPCLookupResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

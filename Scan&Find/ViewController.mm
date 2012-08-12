@@ -12,7 +12,7 @@
 #import <QRCodeReader.h>
 #import <MultiFormatOneDReader.h>
 
-//#import "UPCLookupResultsViewController.h"
+#import "UPCLookupResultsViewController.h"
 
 @interface ViewController () <ZXingDelegate>
 
@@ -58,8 +58,7 @@
 #pragma mark - ZXingDelegate Methods
 - (void)zxingController:(ZXingWidgetController*)controller didScanResult:(NSString *)result {
     NSLog(@"Barcode: %@", result);
-    [self performSelector:@selector(resumeScanning) withObject:nil afterDelay:2.0];
-    //[self performSelector:@selector(startLookupWithUPC:) withObject:result afterDelay:0.5];
+    [self performSelector:@selector(startLookupWithUPC:) withObject:result afterDelay:0.5];
 }
 
 - (void)resumeScanning {
@@ -68,10 +67,9 @@
 }
 
 - (void)startLookupWithUPC:(NSString *)upcString {
-    /*UPCLookupResultsViewController *resultsVC = [[UPCLookupResultsViewController alloc] initWithNibName:@"LookupViewController" bundle:nil];
-    resultsVC.upcString = upcString;
+    UPCLookupResultsViewController *resultsVC = [[UPCLookupResultsViewController alloc] initWithNibName:@"LookupViewController" bundle:nil andUPCString:upcString];
     [self presentModalViewController:resultsVC animated:NO];
-     */    
+    [self resumeScanning];
 }
 
 - (void)zxingControllerDidCancel:(ZXingWidgetController*)controller {

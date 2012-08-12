@@ -19,6 +19,14 @@ Setup
 ==============
 Download the code from github. Zxing is included as a git submodule, so be sure to initialize it. Otherwise, you can download the forked copy here. Be sure to place it in the project's root under Submodules/zxing. If you put it somewhere else, just update the target's Header search paths for ZXingWidget's Classes folder and the cpp/core/src paths to point to your new path.
 
+JSONKit is another submodule included. Be sure to initialize it.
+
+ToDos
+==============
+- Make some use of the Storyboard.
+- Review the conversions of my old boiler plate classes like WebviewController for ARC and modern Objective-C usage.
+- Add the StoreLookup VC after conversion.
+
 License
 ==============
 Copyright © 2012, AMTM Studios, LLC

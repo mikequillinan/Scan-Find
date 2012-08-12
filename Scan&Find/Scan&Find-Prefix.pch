@@ -12,3 +12,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#warning Remove this before committing
+#warning update this.
+#define kSFGoogleProductsKey @"AIzaSyAB6f7aSY9Oh1_4WyeaCobSftmAGgC0G6o"
