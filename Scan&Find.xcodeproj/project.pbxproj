@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		580D9C5E15D7FE5E00A9A3ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580D9C5D15D7FE5E00A9A3ED /* CoreLocation.framework */; };
 		580D9C6015D7FF0A00A9A3ED /* LookupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580D9C5F15D7FF0A00A9A3ED /* LookupViewController.xib */; };
 		5880CCD415D7D95D00724C7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCD315D7D95D00724C7F /* UIKit.framework */; };
 		5880CCD615D7D95D00724C7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CCD515D7D95D00724C7F /* Foundation.framework */; };
@@ -84,7 +83,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		580D9C5D15D7FE5E00A9A3ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		580D9C5F15D7FF0A00A9A3ED /* LookupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LookupViewController.xib; sourceTree = "<group>"; };
 		5880CCCF15D7D95D00724C7F /* Scan&Find.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scan&Find.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5880CCD315D7D95D00724C7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -147,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580D9C5E15D7FE5E00A9A3ED /* CoreLocation.framework in Frameworks */,
 				5880CD6515D7F4E000724C7F /* QuartzCore.framework in Frameworks */,
 				5880CD6315D7F4BE00724C7F /* SystemConfiguration.framework in Frameworks */,
 				5880CD3415D7E41200724C7F /* AddressBook.framework in Frameworks */,
@@ -203,7 +200,6 @@
 				5880CD2E15D7E41200724C7F /* AddressBookUI.framework */,
 				5880CD2F15D7E41200724C7F /* AudioToolbox.framework */,
 				5880CD3015D7E41200724C7F /* AVFoundation.framework */,
-				580D9C5D15D7FE5E00A9A3ED /* CoreLocation.framework */,
 				5880CD3115D7E41200724C7F /* CoreMedia.framework */,
 				5880CD3215D7E41200724C7F /* CoreVideo.framework */,
 				5880CD3315D7E41200724C7F /* libiconv.dylib */,

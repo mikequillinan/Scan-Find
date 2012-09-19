@@ -9,13 +9,10 @@
 #import "UPCLookupResultsViewController.h"
 
 #import <QuartzCore/QuartzCore.h>
-//#import "StoreLookupResultsViewController.h"
 
 @interface UPCLookupResultsViewController ()
 
 @property (nonatomic, copy) NSString *upcString;
-@property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, strong) CLLocation *currentLocation;
 @property (nonatomic, strong) NSCache *imageCache;
 
 @end
@@ -31,15 +28,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        _upcString = upcString;
-        //Location Manager
-        _locationManager = [[CLLocationManager alloc] init];
-        if ([CLLocationManager locationServicesEnabled] == YES) {
-            _locationManager.delegate = self;
-            _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
-            _locationManager.distanceFilter = 10;
-            [_locationManager startUpdatingLocation];
-        }
+        _upcString = upcString;        
         _imageCache = [[NSCache alloc] init];
     }
     
@@ -53,32 +42,12 @@
     
     self.titleLabel.text = [NSString stringWithFormat:@"%@", self.upcString];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        if ([self hasInternetConnectivity] && [CLLocationManager locationServicesEnabled] == NO ) {
+        if ([self hasInternetConnectivity]) {
             dispatch_sync(dispatch_get_main_queue(), ^{  
                 [self getQueryResults];
             });
         }
     });
-}
-
-#pragma mark - CLLocationManager Delegate Methods
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
-    if (newLocation.horizontalAccuracy > 0) {
-        //Valid lat/long
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            if ([self hasInternetConnectivity] && CLLocationCoordinate2DIsValid(newLocation.coordinate)) {
-                dispatch_sync(dispatch_get_main_queue(), ^{  
-                    self.currentLocation = newLocation;
-                    [manager stopUpdatingLocation];
-                    [self getQueryResults];
-                });
-            }
-        });
-    }
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-	NSLog(@"%@ -> %@: %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), [error description]);
 }
 
 #pragma mark - Get Data

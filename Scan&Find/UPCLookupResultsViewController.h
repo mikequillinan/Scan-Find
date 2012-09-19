@@ -7,9 +7,8 @@
 //
 
 #import "LookupViewController.h"
-#import <CoreLocation/CoreLocation.h>
 
-@interface UPCLookupResultsViewController : LookupViewController <CLLocationManagerDelegate>
+@interface UPCLookupResultsViewController : LookupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andUPCString:(NSString *)upcString;
 
