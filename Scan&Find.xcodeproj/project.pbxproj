@@ -39,7 +39,7 @@
 		5880CD5615D7ECFA00724C7F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5515D7ECFA00724C7F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5880CD5B15D7ED4D00724C7F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5A15D7ED4D00724C7F /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5880CD6015D7EF1A00724C7F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5E15D7EF1A00724C7F /* WebViewController.m */; };
-		5880CD6115D7EF1A00724C7F /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD5F15D7EF1A00724C7F /* WebViewController.xib */; };
+		5880CD6115D7EF1A00724C7F /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD5F15D7EF1A00724C7F /* WebView.xib */; };
 		5880CD6315D7F4BE00724C7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD6215D7F4BE00724C7F /* SystemConfiguration.framework */; };
 		5880CD6515D7F4E000724C7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD6415D7F4E000724C7F /* QuartzCore.framework */; };
 		5880CD6A15D7F57400724C7F /* UPCLookupResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */; };
@@ -49,6 +49,7 @@
 		58D01112160A3173007A708C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D01111160A3173007A708C /* Default.png */; };
 		58D01121160A38B2007A708C /* brightness.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D0111F160A38B2007A708C /* brightness.png */; };
 		58D01122160A38B2007A708C /* brightness@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D01120160A38B2007A708C /* brightness@2x.png */; };
+		58D01161160A459D007A708C /* UIColor+SFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D01160160A459D007A708C /* UIColor+SFColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +128,7 @@
 		5880CD5A15D7ED4D00724C7F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5880CD5D15D7EF1A00724C7F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		5880CD5E15D7EF1A00724C7F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		5880CD5F15D7EF1A00724C7F /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		5880CD5F15D7EF1A00724C7F /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
 		5880CD6215D7F4BE00724C7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5880CD6415D7F4E000724C7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UPCLookupResultsCell.xib; sourceTree = "<group>"; };
@@ -138,6 +139,8 @@
 		58D01111160A3173007A708C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		58D0111F160A38B2007A708C /* brightness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness.png; sourceTree = "<group>"; };
 		58D01120160A38B2007A708C /* brightness@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brightness@2x.png"; sourceTree = "<group>"; };
+		58D0115F160A459D007A708C /* UIColor+SFColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SFColors.h"; sourceTree = "<group>"; };
+		58D01160160A459D007A708C /* UIColor+SFColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SFColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +312,8 @@
 			children = (
 				5880CD5115D7EC4900724C7F /* NSString+HTMLEntities.h */,
 				5880CD5215D7EC4900724C7F /* NSString+HTMLEntities.m */,
+				58D0115F160A459D007A708C /* UIColor+SFColors.h */,
+				58D01160160A459D007A708C /* UIColor+SFColors.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -345,7 +350,7 @@
 			children = (
 				5880CD5D15D7EF1A00724C7F /* WebViewController.h */,
 				5880CD5E15D7EF1A00724C7F /* WebViewController.m */,
-				5880CD5F15D7EF1A00724C7F /* WebViewController.xib */,
+				5880CD5F15D7EF1A00724C7F /* WebView.xib */,
 			);
 			name = WebViewController;
 			sourceTree = "<group>";
@@ -473,7 +478,7 @@
 				5880CD2915D7E3A800724C7F /* beep-beep.aiff in Resources */,
 				5880CD3C15D7E92D00724C7F /* icon.png in Resources */,
 				5880CD3E15D7E93000724C7F /* icon@2x.png in Resources */,
-				5880CD6115D7EF1A00724C7F /* WebViewController.xib in Resources */,
+				5880CD6115D7EF1A00724C7F /* WebView.xib in Resources */,
 				5880CD6A15D7F57400724C7F /* UPCLookupResultsCell.xib in Resources */,
 				580D9C6015D7FF0A00A9A3ED /* LookupViewController.xib in Resources */,
 				58D0110E160A316C007A708C /* Default-568h@2x.png in Resources */,
@@ -525,6 +530,7 @@
 				5880CD5B15D7ED4D00724C7F /* Reachability.m in Sources */,
 				5880CD6015D7EF1A00724C7F /* WebViewController.m in Sources */,
 				5880CD6B15D7F57400724C7F /* UPCLookupResultsViewController.m in Sources */,
+				58D01161160A459D007A708C /* UIColor+SFColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

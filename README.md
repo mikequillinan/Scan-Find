@@ -32,10 +32,10 @@ Todo List
 
 Acknowledgments
 ==============
-ZXing for their great opensource scanning library. (https://github.com/zxing/zxing)
-JSONKit for the high performance json parsing engine. (https://github.com/johnezang/JSONKit)
-ShareKit for the use of their well-done activity indicator. (https://github.com/ShareKit/ShareKit)
-The Working Group (http://www.theworkinggroup.ca) for their brightness icon. You can find it at  http://blog.twg.ca/2010/11/retina-display-icon-set/
+- ZXing for their great opensource scanning library. (https://github.com/zxing/zxing)
+- JSONKit for the high performance json parsing engine. (https://github.com/johnezang/JSONKit)
+- ShareKit for the use of their well-done activity indicator. (https://github.com/ShareKit/ShareKit)
+- The Working Group (http://www.theworkinggroup.ca) for their brightness icon. You can find it at  http://blog.twg.ca/2010/11/retina-display-icon-set/
 
 License
 ==============

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1296</int>
-		<string key="IBDocument.SystemVersion">12A269</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2549</string>
+		<int key="IBDocument.SystemTarget">1536</int>
+		<string key="IBDocument.SystemVersion">12B19</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
 		<string key="IBDocument.AppKitVersion">1187</string>
 		<string key="IBDocument.HIToolboxVersion">624.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1498</string>
+			<string key="NS.object.0">1926</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -44,7 +44,7 @@
 							<object class="IBUIImageView" id="402755483">
 								<reference key="NSNextResponder" ref="602876103"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrameSize">{100, 100}</string>
+								<string key="NSFrame">{{1, 1}, {100, 100}}</string>
 								<reference key="NSSuperview" ref="602876103"/>
 								<reference key="NSNextKeyView" ref="899384344"/>
 								<string key="NSReuseIdentifierKey">_NS:567</string>
@@ -107,13 +107,14 @@
 								<int key="IBUILineBreakMode">0</int>
 								<reference key="IBUIFontDescription" ref="216738777"/>
 								<reference key="IBUIFont" ref="329692161"/>
+								<double key="preferredMaxLayoutWidth">206</double>
 							</object>
 							<object class="IBUILabel" id="479274103">
 								<reference key="NSNextResponder" ref="602876103"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{108, 70}, {206, 20}}</string>
 								<reference key="NSSuperview" ref="602876103"/>
-								<reference key="NSNextKeyView" ref="915414319"/>
+								<reference key="NSNextKeyView" ref="46510048"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -183,7 +184,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{228, 88}, {53, 20}}</string>
 								<reference key="NSSuperview" ref="602876103"/>
-								<reference key="NSNextKeyView" ref="46510048"/>
+								<reference key="NSNextKeyView" ref="176897718"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -226,7 +227,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{57, 106}, {43, 20}}</string>
 								<reference key="NSSuperview" ref="602876103"/>
-								<reference key="NSNextKeyView" ref="176897718"/>
+								<reference key="NSNextKeyView" ref="915414319"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -263,6 +264,7 @@
 								<int key="IBUILineBreakMode">0</int>
 								<reference key="IBUIFontDescription" ref="751440323"/>
 								<reference key="IBUIFont" ref="308543866"/>
+								<double key="preferredMaxLayoutWidth">307</double>
 							</object>
 							<object class="IBUIButton" id="176897718">
 								<reference key="NSNextResponder" ref="602876103"/>
@@ -461,10 +463,10 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
-			<real value="1296" key="NS.object.0"/>
+			<real value="1536" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<string key="IBCocoaTouchPluginVersion">1498</string>
+		<string key="IBCocoaTouchPluginVersion">1926</string>
 	</data>
 </archive>

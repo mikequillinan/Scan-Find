@@ -44,6 +44,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.toolbar.tintColor = [UIColor toolbarColor];
 
 }
 
@@ -64,10 +65,11 @@
 }
 
 - (void)viewDidUnload
-{
+{    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -200,20 +202,9 @@
     backgroundViewFrame.size.width = 320; //Hard code the width since content view shrinks with section indexes
     
     CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = backgroundViewFrame;
-    
-    gradient.colors = [NSArray arrayWithObjects:                 
-                       (id)[[UIColor colorWithRed:0.258 green:0.462 blue:0.243 alpha:1] CGColor],
-                       (id)[[UIColor colorWithRed:0.058 green:0.262 blue:0.043 alpha:1] CGColor],
-                       (id)[[UIColor colorWithRed:0.058 green:0.262 blue:0.043 alpha:1] CGColor],
-                       (id)[[UIColor colorWithRed:0.000 green:0.062 blue:0.000 alpha:1] CGColor],
-                       nil];
-    
-    gradient.locations = [NSArray arrayWithObjects: 
-                          [NSNumber numberWithFloat: 0],
-                          [NSNumber numberWithFloat: 0.01],
-                          [NSNumber numberWithFloat: 0.98],
-                          [NSNumber numberWithFloat: 1], nil];
+    gradient.frame = backgroundViewFrame;    
+    gradient.colors = [UIColor cellGradientColors];    
+    gradient.locations = [UIColor cellGradientPositions];
     
     UIView *backgroundView = [[UIView alloc] initWithFrame:backgroundViewFrame];
     backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -222,20 +213,9 @@
     
     //You must use a separate gradient object or you won't get anything in backgroundView above.    
     CAGradientLayer *selectGradient = [CAGradientLayer layer];
-    selectGradient.frame = backgroundViewFrame;
-    
-    selectGradient.locations = [NSArray arrayWithObjects: 
-                                [NSNumber numberWithFloat: 0],
-                                [NSNumber numberWithFloat: 0.03],
-                                [NSNumber numberWithFloat: 0.097],
-                                [NSNumber numberWithFloat: 1], nil];
-    
-    selectGradient.colors = [NSArray arrayWithObjects:
-                             (id)[[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0] CGColor],
-                             (id)[[UIColor colorWithRed:0.0f green:0.162f blue:0.0f alpha:1] CGColor],
-                             (id)[[UIColor colorWithRed:0.0f green:0.162f blue:0.0f alpha:1] CGColor],
-                             (id)[[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0] CGColor],
-                             nil];
+    selectGradient.frame = backgroundViewFrame;    
+    selectGradient.locations = [UIColor cellSelectedGradientColors];
+    selectGradient.colors = [UIColor cellSelectedGradientPositions];
     
     UIView *selectedBackgroundView = [[UIView alloc] initWithFrame:backgroundViewFrame];
     selectedBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;

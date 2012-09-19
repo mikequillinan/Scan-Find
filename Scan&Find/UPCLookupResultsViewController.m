@@ -184,12 +184,12 @@
     NSDictionary *productDictionary = [resultsDictionary objectForKey:@"product"];
     NSString *url = [productDictionary objectForKey:@"link"];
     NSString *title = [productDictionary objectForKey:@"title"];
-	WebViewController *webViewController = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil titleText:title andInitialURL:url];
+	WebViewController *webViewController = [[WebViewController alloc] initWithNibName:@"WebView" bundle:nil titleText:title initialURL:url showDoneButton:NO];
 	webViewController.delegate = self;
     
 	//Create a Nav controller for modal use.
 	UINavigationController *modalNavigationController = [[UINavigationController alloc] init];
-	modalNavigationController.navigationBar.tintColor = [UIColor colorWithRed:0.078 green:0.282 blue:0.063 alpha:1];
+	modalNavigationController.navigationBar.tintColor = [UIColor toolbarColor];
 	[modalNavigationController pushViewController:webViewController animated:YES];
 	[self presentModalViewController:modalNavigationController animated:YES];    
     

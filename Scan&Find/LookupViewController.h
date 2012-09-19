@@ -19,6 +19,7 @@
 @property (nonatomic, strong) NSMutableData *receivedData;
 @property (nonatomic, copy) NSArray *searchResultsArray;
 
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 @property (nonatomic, weak) IBOutlet UITableView *searchTableView;

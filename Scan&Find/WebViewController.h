@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Reachability.h"
 
 @protocol WebViewControllerDelegate;
 
-@interface WebViewController : UIViewController <UIWebViewDelegate>
+@interface WebViewController : UIViewController
 
-@property (weak) id<WebViewControllerDelegate> delegate;
+@property (unsafe_unretained) id<WebViewControllerDelegate> delegate;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil titleText:(NSString *)title andInitialURL:(NSString *)urlString;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil titleText:(NSString *)title initialURL:(NSString *)urlString showDoneButton:(BOOL)showDone;
+ // title text for the webview
+ // urlstring the url to open
+ // showDoneButton button. YES: show on bottom toolbar. NO: show on navigation bar. Default is YES;
 
 @end
 
