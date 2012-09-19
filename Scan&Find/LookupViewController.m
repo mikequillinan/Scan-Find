@@ -132,7 +132,7 @@
     
     self.receivedData = [NSMutableData data];    
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString] cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:10.0];	
+    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString] cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:10.0];
     
     self.urlConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self startImmediately:NO];    
     [self.urlConnection scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
@@ -203,16 +203,16 @@
     gradient.frame = backgroundViewFrame;
     
     gradient.colors = [NSArray arrayWithObjects:                 
-                       (id)[[UIColor colorWithRed:0.078 green:0.282 blue:0.063 alpha:1] CGColor],
+                       (id)[[UIColor colorWithRed:0.258 green:0.462 blue:0.243 alpha:1] CGColor],
                        (id)[[UIColor colorWithRed:0.058 green:0.262 blue:0.043 alpha:1] CGColor],
                        (id)[[UIColor colorWithRed:0.058 green:0.262 blue:0.043 alpha:1] CGColor],
-                       (id)[[UIColor colorWithRed:0.008 green:0.212 blue:0.013 alpha:1] CGColor],
+                       (id)[[UIColor colorWithRed:0.000 green:0.062 blue:0.000 alpha:1] CGColor],
                        nil];
     
     gradient.locations = [NSArray arrayWithObjects: 
                           [NSNumber numberWithFloat: 0],
-                          [NSNumber numberWithFloat: 0.15],
-                          [NSNumber numberWithFloat: 0.85],
+                          [NSNumber numberWithFloat: 0.01],
+                          [NSNumber numberWithFloat: 0.98],
                           [NSNumber numberWithFloat: 1], nil];
     
     UIView *backgroundView = [[UIView alloc] initWithFrame:backgroundViewFrame];
@@ -226,15 +226,15 @@
     
     selectGradient.locations = [NSArray arrayWithObjects: 
                                 [NSNumber numberWithFloat: 0],
-                                [NSNumber numberWithFloat: 0.15],
-                                [NSNumber numberWithFloat: 0.85],
+                                [NSNumber numberWithFloat: 0.03],
+                                [NSNumber numberWithFloat: 0.097],
                                 [NSNumber numberWithFloat: 1], nil];
     
     selectGradient.colors = [NSArray arrayWithObjects:
-                             (id)[[UIColor colorWithRed:0.156f green:0.5625f blue:0.125f alpha:1.0] CGColor],
-                             (id)[[UIColor colorWithRed:0.106f green:0.5125f blue:0.075f alpha:1.0] CGColor],
-                             (id)[[UIColor colorWithRed:0.106f green:0.5125f blue:0.075f alpha:1.0] CGColor],
-                             (id)[[UIColor colorWithRed:0.006f green:0.4525f blue:0.000f alpha:1.0] CGColor],
+                             (id)[[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0] CGColor],
+                             (id)[[UIColor colorWithRed:0.0f green:0.162f blue:0.0f alpha:1] CGColor],
+                             (id)[[UIColor colorWithRed:0.0f green:0.162f blue:0.0f alpha:1] CGColor],
+                             (id)[[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0] CGColor],
                              nil];
     
     UIView *selectedBackgroundView = [[UIView alloc] initWithFrame:backgroundViewFrame];

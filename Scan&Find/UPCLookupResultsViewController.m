@@ -162,7 +162,7 @@
         NSData *imageData = [[NSData alloc] initWithContentsOfURL:url];
         UIImage *image = [UIImage imageWithData:imageData];
         UIImageView *imageView = (UIImageView *)[cell viewWithTag:5];
-        imageView.backgroundColor = [UIColor colorWithRed:0.078 green:0.282 blue:0.063 alpha:1];
+        imageView.backgroundColor = [UIColor clearColor];
         dispatch_async(dispatch_get_main_queue(), ^{
             imageView.image = image;
         });            

@@ -20,6 +20,7 @@
 @property (nonatomic, copy) NSArray *searchResultsArray;
 
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 @property (nonatomic, weak) IBOutlet UITableView *searchTableView;
 @property (nonatomic, weak) IBOutlet UITableViewCell *searchTVCell;
 @property (nonatomic, assign) BOOL alertShown;
