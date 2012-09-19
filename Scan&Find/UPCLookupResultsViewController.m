@@ -16,6 +16,7 @@
 @property (nonatomic, copy) NSString *upcString;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) CLLocation *currentLocation;
+@property (nonatomic, strong) NSCache *imageCache;
 
 @end
 
@@ -38,8 +39,10 @@
             _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
             _locationManager.distanceFilter = 10;
             [_locationManager startUpdatingLocation];
-        } 
+        }
+        _imageCache = [[NSCache alloc] init];
     }
+    
     return self;
 }
 
@@ -60,7 +63,6 @@
 
 #pragma mark - CLLocationManager Delegate Methods
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
-
     if (newLocation.horizontalAccuracy > 0) {
         //Valid lat/long
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -82,6 +84,7 @@
 #pragma mark - Get Data
 - (void)getQueryResults {
     [self cancelRequest];
+#warning TODO: Use locale specifier here.
     NSString *urlString = [NSString stringWithFormat:@"https://www.googleapis.com/shopping/search/v1/public/products?key=%@&country=US&q=%@&alt=json&restrictBy=condition:new&rankBy=price:ascending", kSFGoogleShoppingKey, self.upcString];
     [self startRequestWithURL:urlString];    
 }
@@ -156,17 +159,24 @@
     NSDictionary *inventoryDictionary = [[productDictionary objectForKey:@"inventories"] objectAtIndex:0];
     NSArray *imagesArray = [productDictionary objectForKey:@"images"];
     
-    __block NSString *imageURL = [[imagesArray objectAtIndex:0] objectForKey:@"link"];    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSURL *url = [NSURL URLWithString:imageURL];
-        NSData *imageData = [[NSData alloc] initWithContentsOfURL:url];
-        UIImage *image = [UIImage imageWithData:imageData];
-        UIImageView *imageView = (UIImageView *)[cell viewWithTag:5];
-        imageView.backgroundColor = [UIColor clearColor];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            imageView.image = image;
-        });            
-    });
+    __block UIImageView *imageView = (UIImageView *)[cell viewWithTag:5];
+    imageView.backgroundColor = [UIColor clearColor];
+    NSNumber *cacheKey = [NSNumber numberWithInt:indexPath.row];
+    if (![self.imageCache objectForKey:cacheKey]) {
+        __block NSString *imageURL = [[imagesArray objectAtIndex:0] objectForKey:@"link"];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSURL *url = [NSURL URLWithString:imageURL];
+            NSData *imageData = [[NSData alloc] initWithContentsOfURL:url];
+            UIImage *image = [UIImage imageWithData:imageData];
+            [self.imageCache setObject:image forKey:cacheKey];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                imageView.image = image;
+            });            
+        });
+    } else {
+        UIImage *image = [self.imageCache objectForKey:cacheKey];
+        imageView.image = image;
+    }
     
     UILabel *label = (UILabel *)[cell viewWithTag:1];    
     label.text = [NSString stringWithFormat:@"%@", [productDictionary objectForKey:@"brand"]];
