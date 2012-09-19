@@ -27,7 +27,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.widgetController = [[ZXingWidgetController alloc] initWithDelegate:self showCancel:NO oneDMode:YES showLicense:YES];
+    UIImage *torchImage = [UIImage imageNamed:@"brightness.png"];
+    self.widgetController = [[ZXingWidgetController alloc] initWithDelegate:self showCancel:NO oneDMode:YES showLicense:YES torchButtonImage:torchImage];
     QRCodeReader* qrcodeReader = [[QRCodeReader alloc] init];
     MultiFormatOneDReader *oneDReader = [[MultiFormatOneDReader alloc] init];
     NSSet *readers = [[NSSet alloc ] initWithObjects:oneDReader,qrcodeReader,nil];
