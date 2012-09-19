@@ -84,8 +84,8 @@
 #pragma mark - Get Data
 - (void)getQueryResults {
     [self cancelRequest];
-#warning TODO: Use locale specifier here.
-    NSString *urlString = [NSString stringWithFormat:@"https://www.googleapis.com/shopping/search/v1/public/products?key=%@&country=US&q=%@&alt=json&restrictBy=condition:new&rankBy=price:ascending", kSFGoogleShoppingKey, self.upcString];
+    NSString *countryCode = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
+    NSString *urlString = [NSString stringWithFormat:@"https://www.googleapis.com/shopping/search/v1/public/products?key=%@&country=%@&q=%@&alt=json&restrictBy=condition:new&rankBy=price:ascending", kSFGoogleShoppingKey, countryCode, self.upcString];
     [self startRequestWithURL:urlString];    
 }
 
