@@ -38,6 +38,9 @@
     self.widgetController.soundToPlay = [NSURL fileURLWithPath:[mainBundle pathForResource:@"beep-beep" ofType:@"aiff"] isDirectory:NO];
     
     [self.view addSubview:self.widgetController.view];
+    
+    //Simulator test
+    //[self zxingController:self.widgetController didScanResult:@"1234567890"];
 }
 
 - (void)viewDidUnload
@@ -50,6 +53,15 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+// iOS 6
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 #pragma mark - ZXingDelegate Methods

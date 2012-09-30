@@ -44,6 +44,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.toolbar.backgroundColor = [UIColor toolbarColor];    
     self.toolbar.tintColor = [UIColor toolbarColor];
 
 }
@@ -75,7 +76,16 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
+}
+
+// iOS 6
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 #pragma mark - Connectivity test
@@ -198,16 +208,15 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     //Changes to cell backgrounds should be done in willDisplayCell.
-    CGRect backgroundViewFrame = cell.contentView.frame;
-    backgroundViewFrame.size.width = 320; //Hard code the width since content view shrinks with section indexes
-    
+    float height = [[UIScreen mainScreen] bounds].size.height;
+    CGRect backgroundViewFrame = CGRectMake(0, 0, height, cell.bounds.size.height);
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = backgroundViewFrame;    
     gradient.colors = [UIColor cellGradientColors];    
     gradient.locations = [UIColor cellGradientPositions];
     
     UIView *backgroundView = [[UIView alloc] initWithFrame:backgroundViewFrame];
-    backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
     [backgroundView.layer addSublayer:gradient];
     cell.backgroundView = backgroundView;
     
@@ -218,7 +227,7 @@
     selectGradient.colors = [UIColor cellSelectedGradientPositions];
     
     UIView *selectedBackgroundView = [[UIView alloc] initWithFrame:backgroundViewFrame];
-    selectedBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    selectedBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
     [selectedBackgroundView.layer addSublayer:selectGradient];
     cell.selectedBackgroundView = selectedBackgroundView;
     

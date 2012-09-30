@@ -13,5 +13,7 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#import "UIColor+SFColors.h"
+
 #warning Update this with your own Google Shopping API key before performing a lookup. Get one at https://code.google.com/apis
 #define kSFGoogleShoppingKey @"ENTER_YOUR_KEY_HERE"
