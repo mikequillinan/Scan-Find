@@ -1,6 +1,6 @@
 [submodule "Submodules/zxing"]
 	path = Submodules/zxing
 	url = https://mikequillinan@github.com/mikequillinan/zxing.git
-[submodule "Submodules/json-kit"]
-	path = Submodules/json-kit
-url=https://github.com/johnezang/JSONKit.git
+[submodule "Submodules/ShareKit"]
+	path = Submodules/ShareKit
+url=https://github.com/ShareKit/ShareKit.git

@@ -34,16 +34,18 @@
 		5880CD3C15D7E92D00724C7F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD3B15D7E92D00724C7F /* icon.png */; };
 		5880CD3E15D7E93000724C7F /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD3D15D7E93000724C7F /* icon@2x.png */; };
 		5880CD4C15D7EB6600724C7F /* LookupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD4B15D7EB6600724C7F /* LookupViewController.m */; };
-		5880CD4F15D7EB8700724C7F /* SHKActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD4E15D7EB8700724C7F /* SHKActivityIndicator.m */; };
 		5880CD5315D7EC4900724C7F /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5215D7EC4900724C7F /* NSString+HTMLEntities.m */; };
-		5880CD5615D7ECFA00724C7F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5515D7ECFA00724C7F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5880CD5B15D7ED4D00724C7F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5A15D7ED4D00724C7F /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5880CD6015D7EF1A00724C7F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD5E15D7EF1A00724C7F /* WebViewController.m */; };
 		5880CD6115D7EF1A00724C7F /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD5F15D7EF1A00724C7F /* WebView.xib */; };
 		5880CD6315D7F4BE00724C7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD6215D7F4BE00724C7F /* SystemConfiguration.framework */; };
 		5880CD6515D7F4E000724C7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880CD6415D7F4E000724C7F /* QuartzCore.framework */; };
 		5880CD6A15D7F57400724C7F /* UPCLookupResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */; };
 		5880CD6B15D7F57400724C7F /* UPCLookupResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880CD6915D7F57400724C7F /* UPCLookupResultsViewController.m */; };
+		58BBD36F16234D620071598A /* SHKActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD36E16234D620071598A /* SHKActivityIndicator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		58BBD37416234D730071598A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD37316234D730071598A /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		58BBD37A16234E190071598A /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 58BBD37616234E190071598A /* CHANGELOG.md */; };
+		58BBD37B16234E190071598A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BBD37816234E190071598A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		58BBD37C16234E190071598A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 58BBD37916234E190071598A /* README.md */; };
 		58D0110E160A316C007A708C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D0110D160A316C007A708C /* Default-568h@2x.png */; };
 		58D01110160A3170007A708C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D0110F160A3170007A708C /* Default@2x.png */; };
 		58D01112160A3173007A708C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D01111160A3173007A708C /* Default.png */; };
@@ -118,14 +120,8 @@
 		5880CD3D15D7E93000724C7F /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 		5880CD4A15D7EB6600724C7F /* LookupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupViewController.h; sourceTree = "<group>"; };
 		5880CD4B15D7EB6600724C7F /* LookupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupViewController.m; sourceTree = "<group>"; };
-		5880CD4D15D7EB8700724C7F /* SHKActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKActivityIndicator.h; sourceTree = "<group>"; };
-		5880CD4E15D7EB8700724C7F /* SHKActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKActivityIndicator.m; sourceTree = "<group>"; };
 		5880CD5115D7EC4900724C7F /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTMLEntities.h"; sourceTree = "<group>"; };
 		5880CD5215D7EC4900724C7F /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLEntities.m"; sourceTree = "<group>"; };
-		5880CD5415D7ECFA00724C7F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = "Submodules/json-kit/JSONKit.h"; sourceTree = SOURCE_ROOT; };
-		5880CD5515D7ECFA00724C7F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = "Submodules/json-kit/JSONKit.m"; sourceTree = SOURCE_ROOT; };
-		5880CD5915D7ED4D00724C7F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		5880CD5A15D7ED4D00724C7F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5880CD5D15D7EF1A00724C7F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		5880CD5E15D7EF1A00724C7F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		5880CD5F15D7EF1A00724C7F /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
@@ -134,6 +130,14 @@
 		5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UPCLookupResultsCell.xib; sourceTree = "<group>"; };
 		5880CD6815D7F57400724C7F /* UPCLookupResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCLookupResultsViewController.h; sourceTree = "<group>"; };
 		5880CD6915D7F57400724C7F /* UPCLookupResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPCLookupResultsViewController.m; sourceTree = "<group>"; };
+		58BBD36D16234D620071598A /* SHKActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHKActivityIndicator.h; path = Submodules/ShareKit/Classes/ShareKit/UI/SHKActivityIndicator.h; sourceTree = SOURCE_ROOT; };
+		58BBD36E16234D620071598A /* SHKActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHKActivityIndicator.m; path = Submodules/ShareKit/Classes/ShareKit/UI/SHKActivityIndicator.m; sourceTree = SOURCE_ROOT; };
+		58BBD37216234D730071598A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		58BBD37316234D730071598A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		58BBD37616234E190071598A /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		58BBD37716234E190071598A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		58BBD37816234E190071598A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		58BBD37916234E190071598A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		58D0110D160A316C007A708C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		58D0110F160A3170007A708C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		58D01111160A3173007A708C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
@@ -221,11 +225,7 @@
 			children = (
 				5880CCE215D7D95D00724C7F /* AppDelegate.h */,
 				5880CCE315D7D95D00724C7F /* AppDelegate.m */,
-				5880CCE515D7D95D00724C7F /* MainStoryboard_iPhone.storyboard */,
-				5880CCE815D7D95D00724C7F /* MainStoryboard_iPad.storyboard */,
-				5880CCEB15D7D95D00724C7F /* ViewController.h */,
-				5880CD1015D7E2A700724C7F /* ViewController.mm */,
-				5880CD6C15D7F82900724C7F /* Lookup VCs */,
+				58BBD37D16234E230071598A /* View Controllers */,
 				5880CD2215D7E36F00724C7F /* Dependencies */,
 				5880CD2615D7E3A800724C7F /* Resources */,
 				5880CCDA15D7D95D00724C7F /* Supporting Files */,
@@ -280,10 +280,7 @@
 		5880CD2215D7E36F00724C7F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				5880CD5715D7ECFE00724C7F /* JSONKit */,
-				5880CD5C15D7ED5100724C7F /* Reachability */,
-				5880CD5815D7ED0800724C7F /* ShareKit Components */,
-				5880CD6615D7F53000724C7F /* WebViewController */,
+				58BBD37016234D670071598A /* ShareKit */,
 				5880CD1615D7E36800724C7F /* ZXingWidget.xcodeproj */,
 			);
 			name = Dependencies;
@@ -318,33 +315,6 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		5880CD5715D7ECFE00724C7F /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				5880CD5415D7ECFA00724C7F /* JSONKit.h */,
-				5880CD5515D7ECFA00724C7F /* JSONKit.m */,
-			);
-			name = JSONKit;
-			sourceTree = "<group>";
-		};
-		5880CD5815D7ED0800724C7F /* ShareKit Components */ = {
-			isa = PBXGroup;
-			children = (
-				5880CD4D15D7EB8700724C7F /* SHKActivityIndicator.h */,
-				5880CD4E15D7EB8700724C7F /* SHKActivityIndicator.m */,
-			);
-			name = "ShareKit Components";
-			sourceTree = "<group>";
-		};
-		5880CD5C15D7ED5100724C7F /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				5880CD5915D7ED4D00724C7F /* Reachability.h */,
-				5880CD5A15D7ED4D00724C7F /* Reachability.m */,
-			);
-			name = Reachability;
-			sourceTree = "<group>";
-		};
 		5880CD6615D7F53000724C7F /* WebViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +336,52 @@
 				5880CD6715D7F57400724C7F /* UPCLookupResultsCell.xib */,
 			);
 			name = "Lookup VCs";
+			sourceTree = "<group>";
+		};
+		58BBD37016234D670071598A /* ShareKit */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD37516234E190071598A /* JSONKit */,
+				58BBD37116234D730071598A /* Reachability */,
+				58BBD36D16234D620071598A /* SHKActivityIndicator.h */,
+				58BBD36E16234D620071598A /* SHKActivityIndicator.m */,
+			);
+			name = ShareKit;
+			sourceTree = "<group>";
+		};
+		58BBD37116234D730071598A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD37216234D730071598A /* Reachability.h */,
+				58BBD37316234D730071598A /* Reachability.m */,
+			);
+			name = Reachability;
+			path = Submodules/ShareKit/Classes/ShareKit/Reachability;
+			sourceTree = SOURCE_ROOT;
+		};
+		58BBD37516234E190071598A /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				58BBD37616234E190071598A /* CHANGELOG.md */,
+				58BBD37716234E190071598A /* JSONKit.h */,
+				58BBD37816234E190071598A /* JSONKit.m */,
+				58BBD37916234E190071598A /* README.md */,
+			);
+			name = JSONKit;
+			path = Submodules/ShareKit/Submodules/JSONKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		58BBD37D16234E230071598A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5880CCE515D7D95D00724C7F /* MainStoryboard_iPhone.storyboard */,
+				5880CCE815D7D95D00724C7F /* MainStoryboard_iPad.storyboard */,
+				5880CCEB15D7D95D00724C7F /* ViewController.h */,
+				5880CD1015D7E2A700724C7F /* ViewController.mm */,
+				5880CD6C15D7F82900724C7F /* Lookup VCs */,
+				5880CD6615D7F53000724C7F /* WebViewController */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		58D0111C160A34E2007A708C /* Images */ = {
@@ -486,6 +502,8 @@
 				58D01112160A3173007A708C /* Default.png in Resources */,
 				58D01121160A38B2007A708C /* brightness.png in Resources */,
 				58D01122160A38B2007A708C /* brightness@2x.png in Resources */,
+				58BBD37A16234E190071598A /* CHANGELOG.md in Resources */,
+				58BBD37C16234E190071598A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,13 +542,13 @@
 				5880CCE415D7D95D00724C7F /* AppDelegate.m in Sources */,
 				5880CD1115D7E2A700724C7F /* ViewController.mm in Sources */,
 				5880CD4C15D7EB6600724C7F /* LookupViewController.m in Sources */,
-				5880CD4F15D7EB8700724C7F /* SHKActivityIndicator.m in Sources */,
 				5880CD5315D7EC4900724C7F /* NSString+HTMLEntities.m in Sources */,
-				5880CD5615D7ECFA00724C7F /* JSONKit.m in Sources */,
-				5880CD5B15D7ED4D00724C7F /* Reachability.m in Sources */,
 				5880CD6015D7EF1A00724C7F /* WebViewController.m in Sources */,
 				5880CD6B15D7F57400724C7F /* UPCLookupResultsViewController.m in Sources */,
 				58D01161160A459D007A708C /* UIColor+SFColors.m in Sources */,
+				58BBD36F16234D620071598A /* SHKActivityIndicator.m in Sources */,
+				58BBD37416234D730071598A /* Reachability.m in Sources */,
+				58BBD37B16234E190071598A /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
