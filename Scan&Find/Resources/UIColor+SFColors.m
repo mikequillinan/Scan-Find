@@ -12,16 +12,16 @@
 
 #pragma mark - Main Colors
 + (UIColor *)toolbarColor {
-    return [UIColor colorWithRed:0.078 green:0.282 blue:0.063 alpha:1];
+    return [UIColor colorWithRed:0.647 green:0.647 blue:0.427 alpha:1];
 }
 
 #pragma mark - TableViewCell Colors
 + (NSArray *)cellGradientColors {
     return [NSArray arrayWithObjects:
-            (id)[[UIColor colorWithRed:0.258 green:0.462 blue:0.243 alpha:1] CGColor],
-            (id)[[UIColor colorWithRed:0.058 green:0.262 blue:0.043 alpha:1] CGColor],
-            (id)[[UIColor colorWithRed:0.058 green:0.262 blue:0.043 alpha:1] CGColor],
-            (id)[[UIColor colorWithRed:0.000 green:0.062 blue:0.000 alpha:1] CGColor],
+            (id)[[UIColor colorWithRed:1.0 green:1.0 blue:0.827 alpha:1] CGColor],
+            (id)[[UIColor colorWithRed:0.847 green:0.847 blue:0.627 alpha:1] CGColor],
+            (id)[[UIColor colorWithRed:0.847 green:0.847 blue:0.627 alpha:1] CGColor],
+            (id)[[UIColor colorWithRed:0.647 green:0.647 blue:0.427 alpha:1] CGColor],
             nil];
 }
 
@@ -45,10 +45,10 @@
 
 + (NSArray *)cellSelectedGradientPositions {
     return [NSArray arrayWithObjects:
-            (id)[[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0] CGColor],
-            (id)[[UIColor colorWithRed:0.0f green:0.162f blue:0.0f alpha:1] CGColor],
-            (id)[[UIColor colorWithRed:0.0f green:0.162f blue:0.0f alpha:1] CGColor],
-            (id)[[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:1.0] CGColor],
+            (id)[[UIColor colorWithRed:0.447 green:0.447 blue:0.227 alpha:1] CGColor],
+            (id)[[UIColor colorWithRed:0.647 green:0.647 blue:0.427 alpha:1] CGColor],
+            (id)[[UIColor colorWithRed:0.647 green:0.647 blue:0.427 alpha:1] CGColor],
+            (id)[[UIColor colorWithRed:0.447 green:0.447 blue:0.227 alpha:1] CGColor],
             nil];
 }
 
