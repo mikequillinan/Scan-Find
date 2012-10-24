@@ -137,7 +137,9 @@
             NSURL *url = [NSURL URLWithString:imageURL];
             NSData *imageData = [[NSData alloc] initWithContentsOfURL:url];
             UIImage *image = [UIImage imageWithData:imageData];
-            [self.imageCache setObject:image forKey:cacheKey];
+            if (image) {
+                [self.imageCache setObject:image forKey:cacheKey];
+            }
             dispatch_async(dispatch_get_main_queue(), ^{
                 imageView.image = image;
             });            
