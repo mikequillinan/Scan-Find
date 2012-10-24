@@ -51,6 +51,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
     self.navigationController.toolbarHidden = YES;
 }
 
@@ -61,8 +62,9 @@
         [[SHKActivityIndicator currentIndicator] hide];
     }   
     self.navigationController.toolbarHidden = NO;
-    
-    [super viewWillDisappear:animated];    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+
+    [super viewWillDisappear:animated];
 }
 
 - (void)viewDidUnload
